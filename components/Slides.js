@@ -5,12 +5,13 @@ class Slides extends Component {
   renderSlides() {
     return this.props.data.map((slide) => {
       return (
-        <View Key={slide.text}>
-          <Text>{slide.text}</Text>
+        <View key={slide.text} style={styles.slideStyle}>
+          <Text style={styles.textStyle}>{slide.text}</Text>
         </View>
       );
     });
   }
+
   render() {
     return (
       <ScrollView
@@ -22,5 +23,16 @@ class Slides extends Component {
     );
   }
 }
+
+const styles = {
+  slideStyle: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  slideText: {
+    fontSize: 30
+  }
+};
 
 export default Slides;

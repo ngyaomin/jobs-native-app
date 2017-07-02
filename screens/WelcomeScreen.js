@@ -4,7 +4,7 @@ import Slides from '../components/Slides';
 
 const SLIDE_DATA = [
   { text: 'Welcome to Job App'},
-  { text: 'set location and swap away' }
+  { text: 'set location and swap away to your next money' }
 ];
 
 class WelcomeScreen extends Component {
