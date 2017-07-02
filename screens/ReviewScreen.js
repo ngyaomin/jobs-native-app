@@ -22,17 +22,6 @@ class ReviewScreen extends Component {
       />
     );
   }
-
-
-  // static navigationOptions = {
-  //   title: 'Review Jobs',
-  //   header: ({ navigate }) => {
-  //     return {
-  //       right: <Button title="Settings" onPress={() => navigate()} />
-  //     };
-  //   }
-  // }
-
   render() {
     return (
       <View>
