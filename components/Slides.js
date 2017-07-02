@@ -11,6 +11,7 @@ class Slides extends Component {
         <Button
           title="pursuit your dreams"
           raised
+          buttonStyle={styles.buttonStyle}
         />
       );
     }
@@ -53,6 +54,10 @@ const styles = {
   textStyle: {
     fontSize: 30,
     color: 'white'
+  },
+  buttonStyle: {
+    backgroundColor: '#0288d1',
+    marginTop: 15
   }
 };
 
