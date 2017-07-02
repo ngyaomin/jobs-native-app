@@ -19,6 +19,7 @@ class Slides extends Component {
       <ScrollView
         horizontal
         style={{ flex:1 }}
+        pagingEnabled
       >
         {this.renderSlides()}
       </ScrollView>
