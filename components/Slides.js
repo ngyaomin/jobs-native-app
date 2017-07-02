@@ -12,6 +12,7 @@ class Slides extends Component {
           title="pursuit your dreams"
           raised
           buttonStyle={styles.buttonStyle}
+          onPress={this.props.onComplete}
         />
       );
     }
