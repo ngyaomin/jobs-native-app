@@ -3,25 +3,13 @@ import { View, Text } from 'react-native';
 import { Button } from 'react-native-elements';
 
 class ReviewScreen extends Component {
-  // static navigationOptions = {
-  //   title: 'Review Jobs',
-  //   headerRight: <Button title="Settings" onPress={() => {}} />,
-  // };
-
-  static navigationOptions = {
-  title: 'Jobs Reviews',
-  };
-  render() {
-    const { navigate } = this.props.navigation;
-    return (
-      <Button
-        title="Settings"
-        onPress={() =>
-          navigate()
-        }
-      />
-    );
+  static navigationOptions = ({ navigation }) => {
+    return {
+      title: 'Review Jobs',
+      headerRight: (<Button title="Settings" onPress={() => navigation.navigate('settings')}/>),
+    };
   }
+
   render() {
     return (
       <View>
