@@ -30,6 +30,9 @@ export default class App extends React.Component {
         })
       }
     }, {
+      navigationOptions: {
+        tabBar: { visible: false }
+      },
       lazyLoad: true
     });
 
