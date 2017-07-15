@@ -14,8 +14,15 @@ class DeckScreen extends Component {
           <Text>{job.formattedRelativeTime}</Text>
         </View>
         <Text>
-          {job.snippet.replace(/<b>/g, '')}
+          {job.snippet.replace(/<b>/g, '').replace(/<\/b/g, '')}
         </Text>
+      </Card>
+    );
+  }
+
+  renderNoMoreCards() {
+    return (
+      <Card title="No More jobs">
       </Card>
     );
   }
@@ -26,6 +33,7 @@ class DeckScreen extends Component {
         <Swipe
           data={this.props.jobs}
           renderCard={this.renderCard}
+          renderNoMoreCards={this.renderNoMoreCards}
           />
       </View>
     );
