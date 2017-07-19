@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, Platform, ScrollView } from 'react-native';
-import { Button } from 'react-native-elements';
+import { Button, Card } from 'react-native-elements';
 import { connect } from 'react-redux';
 
 class ReviewScreen extends Component {
