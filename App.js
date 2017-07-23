@@ -4,6 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { TabNavigator, StackNavigator } from 'react-navigation';
 import { Provider } from 'react-redux';
 
+import registerForNotifications from './services/push_notifications';
 import store from './store';
 import AuthScreen from './screens/AuthScreen';
 import WelcomeScreen from './screens/WelcomeScreen';
@@ -13,6 +14,10 @@ import SettingScreen from './screens/SettingScreen';
 import ReviewScreen from './screens/ReviewScreen';
 
 export default class App extends React.Component {
+  componentDidMount() {
+    registerForNotifications();
+  }
+
   render() {
     const MainNavigator = TabNavigator({
       welcome: { screen: WelcomeScreen },
