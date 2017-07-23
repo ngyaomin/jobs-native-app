@@ -73,6 +73,7 @@ const styles = {
     fontStyle: 'italic'
   },
   detailWrapper: {
+    marginTop: 10,
     marginBottom: 10,
     flexDirection: 'row',
     justifyContent: 'space-around'
